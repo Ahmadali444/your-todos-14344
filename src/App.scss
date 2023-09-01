@@ -1,0 +1,70 @@
+@import "./scss/bootstrap";
+
+// Set Main to Whole Body 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FAFAFA;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+// set Layout
+main,
+layout-set {
+  flex: 1;
+}
+
+// Size of Card in Todo
+.todoBorder {
+  background-color: #FAFAFA;
+  border-top: none;
+}
+
+// DashBoradHeader Css
+:where(.css-dev-only-do-not-override-12jzuas).ant-menu-light .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-12jzuas).ant-menu-light>.ant-menu .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-12jzuas).ant-menu-light .ant-menu-submenu-selected>.ant-menu-submenu-title,
+:where(.css-dev-only-do-not-override-12jzuas).ant-menu-light>.ant-menu .ant-menu-submenu-selected>.ant-menu-submenu-title {
+  background-color: $primary;
+  color: #181818;
+  font-weight: bold;
+}
+
+:where(.css-dev-only-do-not-override-12jzuas).ant-card .ant-card-body {
+  padding: 14px;
+}
+
+// TodoBox
+.todoBox {
+  height: 250px;
+  border: none;
+  border-radius: 10px;
+}
+
+.backImage {
+  background-image: url("https://source.unsplash.com/random/?tech");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .trans{
+    opacity: 0.8;
+  }
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 48px;
+
+  .card {
+    max-width: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 0;
+    margin: 0 auto;
+  }
+}
